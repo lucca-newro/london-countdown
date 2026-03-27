@@ -1,51 +1,45 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
   <defs>
     <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a3a52;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#2d5a7b;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="planeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#f08080;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#d97777;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#2d5a7b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3d7a9d;stop-opacity:1" />
     </linearGradient>
   </defs>
   
-  <!-- Fondo cielo suave -->
+  <!-- Cielo fondo -->
   <rect width="192" height="192" fill="url(#skyGrad)"/>
   
-  <!-- Nubes suaves de fondo -->
-  <ellipse cx="40" cy="50" rx="25" ry="15" fill="#e8d5c4" opacity="0.4"/>
-  <ellipse cx="55" cy="45" rx="20" ry="12" fill="#e8d5c4" opacity="0.4"/>
-  <ellipse cx="150" cy="140" rx="30" ry="18" fill="#e8d5c4" opacity="0.35"/>
-  <ellipse cx="170" cy="135" rx="25" ry="14" fill="#e8d5c4" opacity="0.35"/>
+  <!-- Nubes suaves -->
+  <ellipse cx="30" cy="40" rx="28" ry="18" fill="#e8d5c4" opacity="0.5"/>
+  <ellipse cx="50" cy="35" rx="24" ry="15" fill="#e8d5c4" opacity="0.45"/>
+  <ellipse cx="160" cy="150" rx="35" ry="20" fill="#e8d5c4" opacity="0.4"/>
+  <ellipse cx="185" cy="145" rx="28" ry="16" fill="#e8d5c4" opacity="0.35"/>
   
-  <!-- Avión volando -->
+  <!-- AVIÓN: estructura clara -->
   <g transform="translate(96, 100)">
-    <!-- Fuselaje (body) - suave pastel rojo -->
-    <ellipse cx="0" cy="0" rx="35" ry="12" fill="url(#planeGrad)"/>
+    <!-- Fuselaje principal (body) - rojo pastel -->
+    <path d="M 20 0 Q 30 -4 40 0 Q 30 4 20 0" fill="#f08080" stroke="none"/>
+    <rect x="-25" y="-4" width="45" height="8" rx="3" fill="#f08080"/>
     
-    <!-- Cabina (cockpit) -->
-    <circle cx="25" cy="-5" r="10" fill="#d97777" opacity="0.9"/>
+    <!-- Cabina/cockpit -->
+    <circle cx="28" cy="-3" r="8" fill="#d97777"/>
+    <circle cx="30" cy="-3" r="4" fill="#a8c8e8" opacity="0.8"/>
     
-    <!-- Ventanilla -->
-    <circle cx="26" cy="-5" r="5" fill="#b8d4f1"/>
+    <!-- ALA PRINCIPAL izquierda - grande -->
+    <ellipse cx="-8" cy="0" rx="22" ry="9" fill="#e8c4b8" opacity="0.85"/>
+    <!-- ALA PRINCIPAL derecha - grande -->
+    <ellipse cx="8" cy="0" rx="22" ry="9" fill="#f0d4c1" opacity="0.85"/>
     
-    <!-- Ala izquierda -->
-    <ellipse cx="-5" cy="0" rx="18" ry="8" fill="#e8c4b8" opacity="0.8"/>
+    <!-- ALA PEQUEÑA izquierda (stabilizer) -->
+    <ellipse cx="-30" cy="-8" rx="8" ry="5" fill="#d97777" opacity="0.9" transform="rotate(-25 -30 -8)"/>
+    <!-- ALA PEQUEÑA derecha (stabilizer) -->
+    <ellipse cx="-30" cy="8" rx="8" ry="5" fill="#d97777" opacity="0.9" transform="rotate(25 -30 8)"/>
     
-    <!-- Ala derecha -->
-    <ellipse cx="5" cy="0" rx="18" ry="8" fill="#e8c4b8" opacity="0.8"/>
+    <!-- Cola (tail) -->
+    <path d="M -35 -2 L -42 -6 L -40 0 L -42 6 L -35 2 Z" fill="#d97777"/>
     
-    <!-- Cola pequeña (tail fin) -->
-    <rect x="-38" y="-4" width="8" height="8" fill="#d97777"/>
-    
-    <!-- Llamas/estela suave -->
-    <ellipse cx="-40" cy="2" rx="8" ry="6" fill="#f08080" opacity="0.5"/>
-    <ellipse cx="-45" cy="1" rx="6" ry="4" fill="#e8c4b8" opacity="0.4"/>
+    <!-- Estela suave (contrails) -->
+    <ellipse cx="-42" cy="0" rx="6" ry="4" fill="#e8d5c4" opacity="0.5"/>
+    <ellipse cx="-50" cy="0" rx="4" ry="3" fill="#e8d5c4" opacity="0.3"/>
   </g>
-  
-  <!-- Detalles de movimiento (líneas suaves) -->
-  <line x1="25" y1="85" x2="15" y2="90" stroke="#e8d5c4" stroke-width="2" opacity="0.3"/>
-  <line x1="35" y1="80" x2="28" y2="88" stroke="#e8d5c4" stroke-width="2" opacity="0.25"/>
-  <line x1="40" y1="92" x2="35" y2="102" stroke="#e8d5c4" stroke-width="2" opacity="0.2"/>
 </svg>
