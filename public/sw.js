@@ -1,9 +1,9 @@
-const CACHE_NAME = 'london-countdown-v2'
+const CACHE_NAME = 'london-countdown-v3'
 const urlsToCache = [
   '/',
   '/index.html',
   '/manifest.json',
-  '/icon.svg?v=2'
+  '/icon.svg?v=3'
 ]
 
 self.addEventListener('install', event => {
