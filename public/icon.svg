@@ -1,45 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
   <defs>
-    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#2d5a7b;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#3d7a9d;stop-opacity:1" />
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DC2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#991B1B;stop-opacity:1" />
     </linearGradient>
   </defs>
+  <!-- Fondo azul marino -->
+  <rect width="192" height="192" fill="#001C3D"/>
   
-  <!-- Cielo fondo -->
-  <rect width="192" height="192" fill="url(#skyGrad)"/>
-  
-  <!-- Nubes suaves -->
-  <ellipse cx="30" cy="40" rx="28" ry="18" fill="#e8d5c4" opacity="0.5"/>
-  <ellipse cx="50" cy="35" rx="24" ry="15" fill="#e8d5c4" opacity="0.45"/>
-  <ellipse cx="160" cy="150" rx="35" ry="20" fill="#e8d5c4" opacity="0.4"/>
-  <ellipse cx="185" cy="145" rx="28" ry="16" fill="#e8d5c4" opacity="0.35"/>
-  
-  <!-- AVIÓN: estructura clara -->
-  <g transform="translate(96, 100)">
-    <!-- Fuselaje principal (body) - rojo pastel -->
-    <path d="M 20 0 Q 30 -4 40 0 Q 30 4 20 0" fill="#f08080" stroke="none"/>
-    <rect x="-25" y="-4" width="45" height="8" rx="3" fill="#f08080"/>
+  <!-- Casa: estructura principal -->
+  <g transform="translate(96, 96)">
+    <!-- Techo (triángulo rojo) -->
+    <path d="M -50 0 L 0 -45 L 50 0 Z" fill="url(#grad)" stroke="#E8E1D3" stroke-width="2"/>
     
-    <!-- Cabina/cockpit -->
-    <circle cx="28" cy="-3" r="8" fill="#d97777"/>
-    <circle cx="30" cy="-3" r="4" fill="#a8c8e8" opacity="0.8"/>
+    <!-- Paredes (rectángulo claro) -->
+    <rect x="-45" y="0" width="90" height="55" fill="#E8E1D3" stroke="#E8E1D3" stroke-width="2"/>
     
-    <!-- ALA PRINCIPAL izquierda - grande -->
-    <ellipse cx="-8" cy="0" rx="22" ry="9" fill="#e8c4b8" opacity="0.85"/>
-    <!-- ALA PRINCIPAL derecha - grande -->
-    <ellipse cx="8" cy="0" rx="22" ry="9" fill="#f0d4c1" opacity="0.85"/>
+    <!-- Puerta (rectángulo rojo) -->
+    <rect x="-15" y="25" width="30" height="35" fill="#DC2626"/>
     
-    <!-- ALA PEQUEÑA izquierda (stabilizer) -->
-    <ellipse cx="-30" cy="-8" rx="8" ry="5" fill="#d97777" opacity="0.9" transform="rotate(-25 -30 -8)"/>
-    <!-- ALA PEQUEÑA derecha (stabilizer) -->
-    <ellipse cx="-30" cy="8" rx="8" ry="5" fill="#d97777" opacity="0.9" transform="rotate(25 -30 8)"/>
+    <!-- Picaporte (círculo claro) -->
+    <circle cx="10" cy="42" r="3" fill="#E8E1D3"/>
     
-    <!-- Cola (tail) -->
-    <path d="M -35 -2 L -42 -6 L -40 0 L -42 6 L -35 2 Z" fill="#d97777"/>
+    <!-- Ventana izquierda -->
+    <rect x="-35" y="10" width="18" height="18" fill="#001C3D" stroke="#DC2626" stroke-width="2"/>
+    <line x1="-26" y1="10" x2="-26" y2="28" stroke="#DC2626" stroke-width="1"/>
+    <line x1="-35" y1="19" x2="-17" y2="19" stroke="#DC2626" stroke-width="1"/>
     
-    <!-- Estela suave (contrails) -->
-    <ellipse cx="-42" cy="0" rx="6" ry="4" fill="#e8d5c4" opacity="0.5"/>
-    <ellipse cx="-50" cy="0" rx="4" ry="3" fill="#e8d5c4" opacity="0.3"/>
+    <!-- Ventana derecha -->
+    <rect x="17" y="10" width="18" height="18" fill="#001C3D" stroke="#DC2626" stroke-width="2"/>
+    <line x1="26" y1="10" x2="26" y2="28" stroke="#DC2626" stroke-width="1"/>
+    <line x1="17" y1="19" x2="35" y2="19" stroke="#DC2626" stroke-width="1"/>
   </g>
 </svg>
