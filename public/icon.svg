@@ -5,7 +5,31 @@
       <stop offset="100%" style="stop-color:#991B1B;stop-opacity:1" />
     </linearGradient>
   </defs>
+  <!-- Fondo azul marino -->
   <rect width="192" height="192" fill="#001C3D"/>
-  <circle cx="96" cy="96" r="80" fill="url(#grad)"/>
-  <text x="96" y="110" font-size="70" font-weight="bold" fill="#E8E1D3" text-anchor="middle" font-family="serif">🇬🇧</text>
+  
+  <!-- Casa: estructura principal -->
+  <g transform="translate(96, 96)">
+    <!-- Techo (triángulo rojo) -->
+    <path d="M -50 0 L 0 -45 L 50 0 Z" fill="url(#grad)" stroke="#E8E1D3" stroke-width="2"/>
+    
+    <!-- Paredes (rectángulo claro) -->
+    <rect x="-45" y="0" width="90" height="55" fill="#E8E1D3" stroke="#E8E1D3" stroke-width="2"/>
+    
+    <!-- Puerta (rectángulo rojo) -->
+    <rect x="-15" y="25" width="30" height="35" fill="#DC2626"/>
+    
+    <!-- Picaporte (círculo claro) -->
+    <circle cx="10" cy="42" r="3" fill="#E8E1D3"/>
+    
+    <!-- Ventana izquierda -->
+    <rect x="-35" y="10" width="18" height="18" fill="#001C3D" stroke="#DC2626" stroke-width="2"/>
+    <line x1="-26" y1="10" x2="-26" y2="28" stroke="#DC2626" stroke-width="1"/>
+    <line x1="-35" y1="19" x2="-17" y2="19" stroke="#DC2626" stroke-width="1"/>
+    
+    <!-- Ventana derecha -->
+    <rect x="17" y="10" width="18" height="18" fill="#001C3D" stroke="#DC2626" stroke-width="2"/>
+    <line x1="26" y1="10" x2="26" y2="28" stroke="#DC2626" stroke-width="1"/>
+    <line x1="17" y1="19" x2="35" y2="19" stroke="#DC2626" stroke-width="1"/>
+  </g>
 </svg>
